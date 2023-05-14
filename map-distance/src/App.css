@@ -1,0 +1,114 @@
+body{
+  background: #F4F8FA;
+  overflow-x: hidden; /* Hide scrollbars */
+}
+
+#header{
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+#header div {
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+#content{
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #1B31A8;
+  background-color: #F4F8FA;
+  padding-top: 10px;
+
+}
+
+
+#main-container{
+  background-color: #F4F8FA;
+  padding: 0px;
+  margin: 3%;
+  display: flex;
+  /* for destop */
+  flex-direction: row-reverse;
+  justify-content:space-around;
+}
+
+#map-obj{
+  padding: 0px;
+  width: 40%;
+  height: 400px;
+  box-shadow: 5px 5px 10px rgb(173, 173, 173) ;
+}
+#in{
+  width : 40%;
+}
+
+#input-obj {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.btn1{
+  margin: auto;
+}
+.btn1 button{
+  background: #1B31A8;
+  border-radius: 35px;
+  width: 150px;
+  font-size: small;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 14px;
+  padding-right: 14px;
+  
+}
+
+#dis-cont{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5%;
+  padding-top: 2%;
+  height: 50px;
+}
+
+#dis-cont h3 {
+  color: #1B31A8;
+}
+
+.end-cont{
+  margin-top: 7%;
+}
+
+@media only screen and (max-width: 768px){
+  #main-container{
+      
+      flex-direction: column;
+      height: 100%;
+      justify-content: space-evenly;
+
+  }
+
+  #map-obj{
+      width: 100%;
+      height: 250px;
+  }
+
+  #in{
+    padding-top: 21px;
+      width : 100%;
+  }
+  
+  #input-obj {
+      flex-direction: column;
+      width: 90%;
+  }
+}
+
